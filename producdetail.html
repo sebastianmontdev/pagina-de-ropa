@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD.STORE - Homepage</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="top-bar">
+        <p>Sign up and get 20% off to your first order. <a href="#">Sign Up Now</a></p>
+    </div>
+
+    <nav class="navbar container">
+        <div class="logo">CRUD.STORE</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Shop</a></li>
+            <li><a href="#">On Sale</a></li>
+            <li><a href="#">New Arrivals</a></li>
+            <li><a href="#">Brands</a></li>
+        </ul>
+        <div class="search-bar">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="Search for products...">
+        </div>
+        <div class="nav-icons">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <i class="fa-regular fa-user"></i>
+        </div>
+    </nav>
+    <nav class="breadcrumb">
+        <a href="#">Home</a> &gt;
+        <a href="#">Shop</a> &gt;
+        <a href="#">Men</a> &gt;
+        <span class="current">T-shirts</span>
+    </nav>
+    <section class="product-detail container">
+  <div class="product-gallery">
+    <div class="thumbnails">
+      <img src="camisaverde1.png" alt="Vista 1">
+      <img src="camisaverde2.png" alt="Vista 2">
+      <img src="camisaverde3.png" alt="Vista 3">
+    </div>
+    <div class="main-image">
+      <img src="camisaverde4.png" alt="One Life Graphic T-shirt">
+    </div>
+  </div>
+
+  <div class="product-info">
+    <h1>One Life Graphic T-shirt</h1>
+    <div class="rating">
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star-half-stroke"></i>
+      <span>4.5/5</span>
+    </div>
+    <p class="price">$260 <span class="discount">$300</span> <span class="badge">-40%</span></p>
+    <p class="description">This graphic t-shirt is perfect for any occasion. Crafted from soft and breathable fabric, it offers superior comfort and style.</p>
+
+    <div class="options">
+      <div class="colors">
+        <p>Color:</p>
+        <span class="color-swatch olive"></span>
+        <span class="color-swatch darkgreen"></span>
+        <span class="color-swatch navy"></span>
+      </div>
+
+      <div class="sizes">
+        <p>Size:</p>
+        <button>S</button>
+        <button>M</button>
+        <button class="active">L</button>
+        <button>XL</button>
+      </div>
+
+      <div class="quantity">
+        <p>Quantity:</p>
+        <button>-</button>
+        <span>1</span>
+        <button>+</button>
+      </div>
+    </div>
+
+    <button class="btn-primary">Add to Cart</button>
+    
+  </div>
+</section>
+<div class="tab-navigation container">
+  <button class="tab active">Product Details</button>
+  <button class="tab">Rating & Reviews</button>
+  <button class="tab">FAQs</button>
+</div>
+
+<section class="reviews-section container">
+  <div class="reviews-header">
+    <h2 class="section-title">Rating & Reviews</h2>
+    <div class="reviews-controls">
+      <span class="review-count">451 Reviews</span>
+      <select class="sort-dropdown">
+        <option>Latest</option>
+        <option>Top Rated</option>
+        <option>Oldest</option>
+      </select>
+      <button class="btn-primary">Write a Review</button>
+    </div>
+  </div>
+
+</section>
+
+
+
+    <section class="testimonials container">
+    <h2 class="section-title">OUR HAPPY CUSTOMERS</h2>
+    <div class="testimonial-grid">
+        <div class="testimonial-card">
+            <div class="testimonial-rating">★★★★★</div>
+            <div class="testimonial-author">Sarah M.</div>
+            <p class="testimonial-text">"I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations."</p>
+            
+        </div>
+        <div class="testimonial-card">
+            <div class="testimonial-rating">★★★★★</div>
+            <div class="testimonial-author">Alex K.</div>
+            <p class="testimonial-text">"Finding clothes that align with my personal style used to be a challenge until I discovered Shop.co. The range of options they offer is truly remarkable."</p>
+            
+            
+        </div>
+        <div class="testimonial-card">
+            <div class="testimonial-rating">★★★★★</div>
+            <div class="testimonial-author">James L.</div>
+            <p class="testimonial-text">"As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled upon Shop.co. The selection is diverse and trend-savvy."</p>
+        </div>
+    </div>
+</section>
+            <div class="center-btn">
+                <button class="btn-outline">View All</button>
+            </div>
+            <div class="view-all-container">
+            </div>
+
+                <hr class="divider">
+
+    <footer class="footer">
+        <div class="container">
+            <div class="newsletter">
+                <h2>STAY UPTO DATE ABOUT OUR LATEST OFFERS</h2>
+                <div class="newsletter-form">
+                    <input type="email" placeholder="Enter your email address">
+                    <button>Subscribe to Newsletter</button>
+                </div>
+            </div>
+            
+            <div class="footer-links">
+                <div class="footer-brand">
+                    <h3>CRUD.STORE</h3>
+                    <p>We have clothes that suits your style and which you're proud to wear.</p>
+                </div>
+                <div class="link-column">
+                    <h4>COMPANY</h4>
+                    <a href="#">About</a>
+                    <a href="#">Features</a>
+                    <a href="#">Works</a>
+                </div>
+                <div class="link-column">
+                    <h4>HELP</h4>
+                    <a href="#">Customer Support</a>
+                    <a href="#">Delivery Details</a>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Crud.store © 2025, All Rights Reserved</p>
+        </div>
+    </footer>
+</body>
+</html>

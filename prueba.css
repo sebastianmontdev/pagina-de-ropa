@@ -1,0 +1,91 @@
+/* --- SECCIÓN DE TESTIMONIOS/RESEÑAS --- */
+.testimonials-section {
+    padding: 60px 0;
+}
+
+/* Encabezado con título y flechas */
+.testimonials-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end; /* Alinea el título y las flechas en la parte inferior */
+    margin-bottom: 40px;
+}
+
+/* Modificación para el título de esta sección */
+.section-title.left-align {
+    text-align: left;
+    margin-bottom: 0;
+    font-size: 2.8rem; /* Un poco más grande para el destaque */
+}
+
+.nav-arrows i {
+    font-size: 1.5rem;
+    color: var(--color-primary);
+    margin-left: 15px;
+    cursor: pointer;
+    border: 1px solid var(--color-primary); /* Borde negro como en la imagen */
+    border-radius: 50%; /* Hace que sea circular */
+    padding: 10px;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.nav-arrows i:hover {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
+
+/* Contenedor del Carrusel */
+.testimonials-carousel {
+    display: flex;
+    gap: 20px;
+    /* 💡 Clave para el carrusel: permite el desplazamiento horizontal */
+    overflow-x: scroll; 
+    /* Oculta la barra de desplazamiento en navegadores WebKit (Chrome, Safari) */
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none; /* Firefox */
+    padding-bottom: 20px; /* Espacio para que el scroll no choque */
+}
+
+/* Ocultar barra de desplazamiento en Chrome/Safari */
+.testimonials-carousel::-webkit-scrollbar {
+    display: none;
+}
+
+/* Estilo de la Tarjeta de Reseña */
+.review-card {
+    /* Define el ancho fijo de la tarjeta para que se vea el scroll */
+    min-width: 380px; 
+    padding: 30px;
+    background-color: var(--color-white);
+    border: 1px solid var(--color-secondary);
+    border-radius: 10px;
+    /* Evita que las tarjetas se intenten reducir de tamaño */
+    flex-shrink: 0; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); 
+}
+
+.review-card .stars {
+    color: #ffc107; /* Color dorado para las estrellas */
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.review-card h3 {
+    font-family: var(--font-body); /* Usamos la fuente de cuerpo para el nombre */
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.review-card .verified {
+    color: #00b894; /* Color verde para el ícono de verificado */
+    font-size: 1rem;
+    margin-left: 8px;
+}
+
+.review-card p {
+    color: var(--color-text-light);
+    line-height: 1.6;
+}
